@@ -1,4 +1,4 @@
-# proyecto_calculadora_grupo02
+# Proyecto01JSGrupoN2
 Calculadora de propinas porcentual hecho con HTML, CSS y JavaScript
 
 == Apellido y Nombre / LU / DNI ==
@@ -8,3 +8,7 @@ Torres Ignacio / 0095 / 44125517
 Albornoz Maria Del Rosario / 00412 / 45468682
 
 Segovia Joaquin Amaru / 00684 / 44645340
+
+Sosa Milagros Nahir  / 00500 / 
+
+Zerda Fernando Waldo / 00685 / 42582115
