@@ -9,11 +9,28 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
   <script src="../src/index.js"></script>
 </head>
-<body onload="init();">
+<body>
 <h1>Hola mundo</h1>
+<img src="./img/laroca.jpg" alt="">
 <button class="contact100-form-btn" id="enviar" onmousedown="sonido.play()">
   Enviar datos
 </button>
-<img src="./img/laroca.jpg" alt="">
+<h1>Calculadora de Propina</h1>
+<div class="calculadora">
+  <label for="precioOriginal">Precio a pagar: </label>
+  <input type="number" id="precioOriginal">
+  <br>
+  <label for="porcentajePropina">Porcentaje de propina</label>
+  <input type="number" id="porcentajePropina">
+  <br>
+  <button id="botonCalcular">Sacar Porcentaje</button>
+  <p>Propina: $ 0.00</p>
+  <p>Precio Total: $ 0.00</p>
+  <footer class="piePagina">
+    Copyright ©2023
+    Creadores: Maru, Neru, Ro, NT, Zendo
+    Somos: DigitalDreamers
+  </footer>
+</div>
 </body>
 </html>
