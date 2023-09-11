@@ -5,31 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Site</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel= "stylesheet" type= "text/css" herf= "http.//fonts.googleapis.com/css?family=Montserrat">
+  <link rel= "stylesheet" type= "text/css" herf= "http.//fonts.googleapis.com/css?family=Poppins">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </head>
 <body>
-<h1>Hola mundo</h1>
-<img src="./img/laroca.jpg" alt="">
-<h1>Calculadora de Propina</h1>
-<div class="calculadora">
-  <label for="monto">Precio a pagar: </label>
-  <input type="number" id="monto">
-  <br>
-  <label for="porcentaje">Porcentaje de propina</label>
-  <input type="number" id="porcentaje">
-  <br>
-  <button id="botonCalcular" onmousedown="sonido.play()" onclick="sacarPropina()">Sacar Porcentaje</button>
-  <div id="respuestaPorcentaje">
-  </div>
-  <div id="respuestaTotal">
-  </div>
+  <!-- HEADER -->
+  <header>
+    <h1>DigitalDreamers </h1>
+  </header>
+  <!-- MAIN -->
+  <main class="container ">
+    <secttion class="row  justify-content-center    ">
+      <div class="calculadora col-xs-8 col-sm-10 col-md-7 col-lg-6 col-xl-5">
+        <h2 class="title">Calculadora de Propinas</h2>
+        <form action="" class="cont-entrada">
+          <!-- ENTRADA -->
+            <div class="entrada ">
+              <div >
+                <label for="monto">Precio a pagar </label>
+              </div>
+              <div >
+                <input type="number" id="monto">
+              </div>
+            </div>
+            <div class="entrada">
+              <div >
+                <label for="porcentaje">Porcentaje de propina</label>
+              </div>
+              <div >
+                <input type="number" id="porcentaje" name="rango" min="0" max="100">
+              </div>
+            </div>
+            <div>
+              <input type="range" class="barra" min="0" max="100" step="5" value="0"
+              onchange="document.getElementById('porcentaje').value=value;">
+            </div>
+        </form>
+        <!-- BOTONES -->
+        <div class="botones">
+          <button id="botonCalcular" onmousedown="sonido.play()" onclick="sacarPropina()">Sacar Porcentaje</button>
+          <button id="botonReset" type="reset">Limpiar</button>
+        </div>
+        <!-- SALIDA -->
+        <div id="salida">
+        </div>
+      </div>
+    </secttion>
+  </main>
+  <!-- FOOTER -->
   <footer class="piePagina">
-    Copyright ©2023
-    Creadores: Maru, Neru, Ro, NT, Zendo
-    Somos: DigitalDreamers
+    <p>Creadores:</p>
+      <ul>
+          <li class="list-inline-item"><a href="https://github.com/AmaruSegovia" target="_blank">Maru</a></li>
+          <li class="list-inline-item"><a href="https://github.com/nt-neru" target="_blank">Neru</a></li>
+          <li class="list-inline-item"><a href="https://github.com/RowsMush022" target="_blank">Ro</a></li>
+          <li class="list-inline-item"><a href="https://github.com/NT125" target="_blank">NT</a></li>
+          <li class="list-inline-item"><a href="https://github.com/Zendo27" target="_blank">Zendo</a></li>
+      </ul>
+    <p>Copyright ©2023 DigitalDreamers</p>
+
   </footer>
-</div>
 <script src="../src/index.js"></script>
+
 </body>
 </html>

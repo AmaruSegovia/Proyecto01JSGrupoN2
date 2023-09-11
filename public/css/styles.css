@@ -1,0 +1,155 @@
+*,ul,p{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+.title, .resaltar, .numero{
+    font-family: poppins;
+}
+:root{
+    --color-primario: #faf2c0;
+    --header-footer: #1C2936;
+    --bordes: #F4B75C; 
+    --resultado: #1eb5be;
+    --texto-form: #7D6441;
+}
+header{
+    background-color: var(--header-footer);
+    color: #fff;
+    padding: 20px;
+}
+/* ------ MAIN ------ */
+main{
+    padding: 60px;
+}
+.title{
+    background-color: rgb(234, 158, 60);
+    text-align: center;
+    padding: 20px;
+    border-radius: 7px;
+
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+.calculadora{
+    background-color: var(--color-primario);
+    padding: 20px;
+    border: solid var(--bordes) 10px;
+    border-radius: 18px;
+    
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--texto-form);
+}
+
+input{
+    background-color: #fff;
+    width: 100px;
+    text-align: right;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 4px;
+}
+.cont-entrada{
+    margin: 15px 0;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    gap: 10px;
+}
+.barra {
+    -webkit-appearance: none;
+    height: 8px;
+    width: 100%;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+  }
+  
+.barra::-webkit-slider-thumb {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: url(./../img/izquierda-y-derecha.png) #a4f3eb;
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.botones, .entrada{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.botones{
+    gap: 5px;
+    margin: 0 10px;
+}
+#botonCalcular{
+    background-color: #69c16f;
+}
+#botonReset{
+    background-color: #1ac0c9;
+}
+button{
+    background-color: rgb(51, 74, 10);
+    border-radius: 8px;
+    padding: 5px 18px;
+    color: #fff;
+    border: 0;
+}
+/* --- Salida --- */
+#salida{
+    background-color: #fff; 
+}
+#respuestaTotal{
+    margin-top: 20px;
+    padding: 10px 35px;
+
+    border: var(--bordes) 5px;
+    border-style: solid none solid none;
+}
+.Monto, .Total, .Porcentaje{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.numero{
+    font-weight: 400;
+}
+.resaltar-text{
+    font-size: 18px;
+    font-weight: 800;
+}
+.resaltar-num {
+    color: #1eb5be;
+    font-size: 28px;
+    font-weight: 700;
+}
+/* ------ FOOTER ------ */
+.piePagina{
+    background-color: var(--header-footer);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+ul{ 
+    margin-bottom: 10px; 
+    
+}
+
+/* ----------- Media ----------- */
+@media screen and (max-width:380px) {
+    input{
+        width: 100%;
+    }
+    .entrada , .botones{
+        justify-content: center;
+    }
+}
